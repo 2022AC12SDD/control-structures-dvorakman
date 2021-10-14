@@ -1,0 +1,16 @@
+BEGIN check_guess(guess, target)
+    """Checks a guess to see if it is the same as the target.
+
+    Complete this  function using binary selection 
+
+    Args:
+        guess: int - the guessed number
+        target: int - the correct or target number
+
+    Returns:
+        winner: bool - True if correct guess otherwise false
+
+    """
+    pass
+
+END subprogram
