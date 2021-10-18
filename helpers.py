@@ -35,7 +35,11 @@ def check_guess_bin(guess, target):
         winner: bool - True if correct guess otherwise false
 
     """
-    pass
+    
+    if guess == target:
+        return True
+    else:
+        return False
 
 ## multiway selection
 def check_guess_multi(guess, target):
