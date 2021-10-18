@@ -35,10 +35,7 @@ def check_guess_bin(guess, target):
         winner: bool - True if correct guess otherwise false
 
     """
-    if guess == target:
-        return True
-    else:
-        return False
+    pass
 
 ## multiway selection
 def check_guess_multi(guess, target):
@@ -57,7 +54,13 @@ def check_guess_multi(guess, target):
         prompt: str - "higher", "lower" or "correct"
 
     """
-    pass
+    while guess != target:
+        if guess > target:
+            guess = int(input("Lower: "))
+        else:
+            guess = int(input("Higher: "))
+
+    print("Correct")
 
 ## pre-test repetition
 def factorial(num):
