@@ -12,7 +12,14 @@ def ultimate_answer(question):
     returns:
         str
     """
-    return None
+
+    if question == "What is the meaning of Life, The Universe,Everything?":
+        answer = "That is not much of a question"
+
+    else:
+        answer = "That is not much of a question"
+
+    return answer
 
 ## binary selection ##
 def check_guess_bin(guess, target):
