@@ -96,5 +96,10 @@ def add_array(in_array):
     Returns:
         sum: the sum of the array
     """
-    pass
+    
+    sum = 0
 
+    for i in range(0, len(in_array)):
+        sum = sum + in_array[i]
+
+    return sum
