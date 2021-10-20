@@ -81,7 +81,15 @@ def factorial(num):
     Returns:
         fact: the factorial of num
     """
-    pass
+    
+    iteration = 0
+    fact = 1
+
+    while iteration < num:
+        for i in range(1,num+1):
+            iteration = iteration + 1
+            fact = fact * i
+        return fact
 
 ## counted repetition
 def add_array(in_array):
