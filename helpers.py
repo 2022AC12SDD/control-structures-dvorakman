@@ -13,8 +13,8 @@ def ultimate_answer(question):
         str
     """
 
-    if question == "What is the meaning of Life, The Universe,Everything?":
-        answer = "That is not much of a question"
+    if question == "What is the meaning of Life, The Universe, Everything?":
+        answer = "42"
 
     else:
         answer = "That is not much of a question"
