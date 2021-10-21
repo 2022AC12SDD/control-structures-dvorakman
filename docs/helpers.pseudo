@@ -40,6 +40,8 @@ BEGIN ultimate_answer(question)
     ENDIF
 
     RETURN answer
+
+END subprogram
     
 BEGIN check_guess_multi(guess, target)
     """Checks a guess to see if it is the same as the target.
