@@ -41,3 +41,28 @@ BEGIN ultimate_answer(question)
 
     RETURN answer
     
+BEGIN check_guess_multi(guess, target)
+    """Checks a guess to see if it is the same as the target.
+
+    If the guess is incorrect, prompts the player to guess higher
+    or lower as appropriate.
+
+    Complete this  function using multi-way selection 
+
+    Args:
+        guess: int - the guessed number
+        target: int - the correct or target number
+
+    Returns:
+        prompt: str - "higher", "lower" or "correct"
+
+    """
+    WHILE guess not equal to target
+        IF guess less than target THEN
+            prompt user to enter a lower number
+        ELSE
+            prompt user to enter a higher number
+        ENDIF
+    PRINT Correct
+
+END subprogram
