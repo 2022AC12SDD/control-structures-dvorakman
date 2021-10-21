@@ -11,6 +11,11 @@ BEGIN check_guess(guess, target)
         winner: bool - True if correct guess otherwise false
 
     """
-    pass
+    
+    IF guess equal to target THEN
+        RETURN True
+    ELSE
+        RETURN false
+    ENDIF
 
 END subprogram
