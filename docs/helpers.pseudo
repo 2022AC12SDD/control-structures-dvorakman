@@ -97,3 +97,27 @@ BEGIN factorial(num)
     ENDWHILE
 
 END subprogram
+
+BEGIN add_array(in_array)
+    """Adds the elements of an array.
+
+    Use counted repetition, using a start, finish and a step, to sum the
+    elements of an array
+
+    Args:
+        in_array: array if numbers to be added
+
+    Returns:
+        sum: the sum of the array
+    """
+
+    BEGIN INITIALISATION
+    sum count is set to 0
+    END INITIALISATION
+
+    FOR index in range 0 to length of in_array
+        add sum and index of in_array
+    
+    RETURN sum
+
+END subprogram
