@@ -17,3 +17,8 @@ def test_check_guess_bin():
         assert(h.check_guess_bin(guess, target)) == True
     except AssertionError:
         print("check_guess_bin(guess, target) is not working expectedly")
+
+def test_check_guess_multi():
+    try:
+    expect AssertionError:
+        print("check_guess_multi(guess, target) is not working expectedly")
