@@ -68,3 +68,32 @@ BEGIN check_guess_multi(guess, target)
     PRINT Correct
 
 END subprogram
+
+BEGIN factorial(num)
+    """Calculates the factorial of a number.
+
+    Use pre-test repetition to write a function that computes the factorial of a number.
+    A factorial of a number is the product of all the positive integers
+    less than it.
+    For example 4 factorial is 4 x 3 x 2 x 1 = 24 
+
+    Args:
+        num: int - the number for which to calculate the factorial
+        
+    Returns:
+        fact: the factorial of num
+    """
+    
+    INITIALISATION
+    iteration count set to 0
+    fact set to 1
+    END INITIALISATION
+
+    WHILE iteration is less than num
+        FOR index in range 1 to num+1
+            iteration count add 1
+            fact equals fact multiplied by index
+        RETURN fact
+    ENDWHILE
+
+END subprogram
