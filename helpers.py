@@ -12,7 +12,14 @@ def ultimate_answer(question):
     returns:
         str
     """
-    return None
+
+    if question == "What is the meaning of Life, The Universe, Everything?":
+        answer = "42"
+
+    else:
+        answer = "That is not much of a question"
+
+    return answer
 
 ## binary selection ##
 def check_guess_bin(guess, target):
@@ -28,7 +35,11 @@ def check_guess_bin(guess, target):
         winner: bool - True if correct guess otherwise false
 
     """
-    pass
+    
+    if guess == target:
+        return True
+    else:
+        return False
 
 ## multiway selection
 def check_guess_multi(guess, target):
@@ -47,7 +58,13 @@ def check_guess_multi(guess, target):
         prompt: str - "higher", "lower" or "correct"
 
     """
-    pass
+    while guess != target:
+        if guess > target:
+            guess = int(input("Lower: "))
+        else:
+            guess = int(input("Higher: "))
+
+    print("Correct")
 
 ## pre-test repetition
 def factorial(num):
@@ -64,7 +81,15 @@ def factorial(num):
     Returns:
         fact: the factorial of num
     """
-    pass
+    
+    iteration = 0
+    fact = 1
+
+    while iteration < num:
+        for i in range(1,num+1):
+            iteration = iteration + 1
+            fact = fact * i
+        return fact
 
 ## counted repetition
 def add_array(in_array):
@@ -79,5 +104,10 @@ def add_array(in_array):
     Returns:
         sum: the sum of the array
     """
-    pass
+    
+    sum = 0
 
+    for i in range(0, len(in_array)):
+        sum = sum + in_array[i]
+
+    return sum
