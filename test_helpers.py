@@ -6,3 +6,14 @@ def test_ultimate_answer():
     assert h.ultimate_answer(question1) == '42'
     question2 = 'What is 6 x 7'
     assert h.ultimate_answer(question2) == 'That is not much of a question'
+
+def test_check_guess_bin():
+    try:
+        guess = 1
+        target = 3
+        assert(h.check_guess_bin(guess, target)) == False
+        guess = 2
+        target = 2
+        assert(h.check_guess_bin(guess, target)) == True
+    except AssertionError:
+        print("check_guess_bin(guess, target) is not working expectedly")
